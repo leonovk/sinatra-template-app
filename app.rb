@@ -5,11 +5,13 @@ require 'sinatra/json'
 
 # main app class
 class Application < Sinatra::Base
-  get '/' do
-    result = {
-      lol: 'kek'
-    }
+  set :views, 'app/views'
 
-    json result
+  get '/' do
+    redirect "/index.html", 303
+  end
+
+  get '/healthz' do
+    json {:json => 'ok'}
   end
 end
