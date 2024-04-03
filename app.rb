@@ -8,10 +8,10 @@ class Application < Sinatra::Base
   set :views, 'app/views'
 
   get '/' do
-    redirect "/index.html", 303
+    redirect '/index.html', 303
   end
 
   get '/healthz' do
-    json {:json => 'ok'}
+    json({ json: 'ok' })
   end
 end
