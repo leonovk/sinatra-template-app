@@ -1,5 +1,13 @@
-# sinatra-base
+# sinatra template app
 
-## Launch
+## Installation and launch
 
-`puma` or `puma -C config/puma.rb`
+```bash
+bundle install
+```
+
+and launch
+
+```bash
+puma
+```
