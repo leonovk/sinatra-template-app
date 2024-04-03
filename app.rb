@@ -11,6 +11,10 @@ class Application < Sinatra::Base
     redirect '/index.html', 303
   end
 
+  get '/time' do
+    erb :time
+  end
+
   get '/healthz' do
     json({ json: 'ok' })
   end
