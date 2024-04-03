@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
+    dotenv (3.1.0)
     json (2.7.1)
     language_server-protocol (3.17.0.3)
     multi_json (1.15.0)
@@ -48,6 +49,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  dotenv
   puma
   rubocop
   sinatra

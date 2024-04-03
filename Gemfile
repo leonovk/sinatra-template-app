@@ -7,5 +7,6 @@ gem 'sinatra'
 gem 'sinatra-json'
 
 group :development do
+  gem 'dotenv'
   gem 'rubocop'
 end

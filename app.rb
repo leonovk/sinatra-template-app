@@ -2,15 +2,14 @@
 
 require 'sinatra/base'
 require 'sinatra/json'
-require_relative 'app/hello'
 
-# main class
+# main app class
 class Application < Sinatra::Base
   get '/' do
-    json Hello.hi
-  end
+    result = {
+      lol: 'kek'
+    }
 
-  get '/rand' do
-    json Hello.rand
+    json result
   end
 end
