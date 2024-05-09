@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'sinatra/base'
-require 'sinatra/json'
+require 'sinatra'
+require 'json'
 
 # main app class
 class Application < Sinatra::Base
@@ -16,6 +16,6 @@ class Application < Sinatra::Base
   end
 
   get '/healthz' do
-    json({ json: 'ok' })
+    { json: 'ok' }.to_json
   end
 end
